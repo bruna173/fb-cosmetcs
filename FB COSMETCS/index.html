@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FB Cosmetics | Sua beleza, nossa essência</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="logo">
+            <img src="WhatsApp Image 2026-11-01 at 16.24.38.jpeg" alt="FB Cosmetics">
+        </div>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+        <button class="cart-button" onclick="abrirCarrinho()">
+            🛍️ Carrinho (<span id="cart-count">0</span>)
+        </button>
+    </header>
+
+    <!-- PÁGINA INICIAL -->
+    <section class="inicio" id="inicio">
+
+        <div class="inicio-texto">
+            <span class="subtitulo">SEU MOMENTO DE BELEZA COMEÇA AQUI</span>
+
+            <h1>
+                Sua beleza,<br>
+                <span>nossa essência.</span>
+            </h1>
+
+            <p>
+                Descubra produtos incríveis para cuidar de você,
+                realçar sua beleza e elevar sua autoestima.
+            </p>
+
+            <div class="botoes">
+                <a href="#produtos" class="botao-comprar">
+                    Comprar online ♡
+                </a>
+
+                <a href="#" id="whatsapp-home"
+                   class="botao-whatsapp" target="_blank">
+                    Conversar pelo WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <div class="inicio-imagem">
+            <img src="WhatsApp Image 2026-11-01 at 16.24.38.jpeg" alt="FB Cosmetics">
+        </div>
+
+    </section>
+
+    <!-- PRODUTOS -->
+    <section class="produtos" id="produtos">
+
+        <div class="titulo-secao">
+            <span>FB COSMETICS</span>
+            <h2>Encontre seus favoritos</h2>
+            <p>Escolha seus produtos e monte seu pedido!</p>
+        </div>
+
+        <div class="lista-produtos" id="lista-produtos">
+            <!-- Os produtos serão inseridos pelo JavaScript -->
+        </div>
+
+    </section>
+
+    <!-- CARRINHO -->
+    <div class="fundo-carrinho" id="fundo-carrinho"
+         onclick="fecharCarrinho()"></div>
+
+    <aside class="carrinho" id="carrinho">
+
+        <div class="carrinho-topo">
+            <h2>Meu carrinho ♡</h2>
+            <button onclick="fecharCarrinho()">✕</button>
+        </div>
+
+        <div id="itens-carrinho">
+            <p class="carrinho-vazio">Seu carrinho está vazio.</p>
+        </div>
+
+        <div class="carrinho-final">
+            <h3>
+                Total:
+                <span id="total">R$ 0,00</span>
+            </h3>
+
+            <button onclick="finalizarPedido()">
+                Finalizar pelo WhatsApp
+            </button>
+        </div>
+
+    </aside>
+
+    <!-- RODAPÉ -->
+    <footer id="contato">
+        <h2>FB COSMETICS</h2>
+        <p>Sua beleza, nossa essência.</p>
+        <a id="whatsapp-footer" href="#" target="_blank">
+            Fale com a gente pelo WhatsApp
+        </a>
+        <p class="direitos">
+            © 2026 FB Cosmetics. Todos os direitos reservados.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
